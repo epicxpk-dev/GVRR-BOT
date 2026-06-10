@@ -1,0 +1,20 @@
+{
+  "name": "greenville-rp-discord-bot",
+  "version": "1.0.0",
+  "description": "The Greenville Roleplay Rural bot is a multipurpose discord bot, to help out with moderation and managing session and making the community better for everyone. Made by Charxlie",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "pm2:start": "pm2 start ecosystem.config.cjs",
+    "pm2:logs": "pm2 logs gvrr-bot",
+    "pm2:stop": "pm2 stop gvrr-bot"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
